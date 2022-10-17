@@ -10,6 +10,7 @@ src/main/resources/application.yml
 src/main/resources/application.yaml
 src/main/resources/**.yaml
 src/main/resources/**.yml
+
 ### STS ###
 .apt_generated
 .classpath
@@ -21,7 +22,7 @@ src/main/resources/**.yml
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-
+src/main/resources/application.yml
 ### IntelliJ IDEA ###
 .idea
 *.iws
