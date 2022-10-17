@@ -39,9 +39,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public User findUser(UserDto userDto) {
-        return userRepository.findByNicknameAndPassword(userDto.nickname(),
-                passwordEncoder.encode(userDto.password())).orElseThrow(() -> new IllegalArgumentException("not found user"));
+    public UserDto findUser(UserDto userDto) {
+        User user =
+                userRepository.findByNicknameAndPassword(userDto.nickname(),
+                        passwordEncoder.encode(userDto.password())).orElseThrow(() -> new IllegalArgumentException("not found user"));
+
+        return UserDto.toUserDtoFromUser(user);
     }
 
     @Override

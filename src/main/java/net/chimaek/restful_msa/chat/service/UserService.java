@@ -9,7 +9,7 @@ public interface UserService {
 
     Long Register(UserDto userDto);
 
-    User findUser(UserDto userDto);
+    UserDto findUser(UserDto userDto);
 
     List<User> findAllUser();
 }

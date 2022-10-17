@@ -4,12 +4,7 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-./src/main/**/resources/**.yml
-./src/main/**/resources/**.yaml
-src/main/resources/application.yml
-src/main/resources/application.yaml
-src/main/resources/**.yaml
-src/main/resources/**.yml
+
 
 ### STS ###
 .apt_generated
@@ -22,7 +17,7 @@ src/main/resources/**.yml
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-src/main/resources/application.yml
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -41,3 +36,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+src/main/resources/application.yml
+./src/main/**/resources/**.yml
+./src/main/**/resources/**.yaml
+src/main/resources/application.yml
+src/main/resources/application.yaml
+src/main/resources/**.yaml
+src/main/resources/**.yml
+application.yml
