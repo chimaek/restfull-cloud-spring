@@ -1,12 +1,12 @@
 plugins {
-    id 'org.springframework.boot' version '2.7.4'
+    id 'org.springframework.boot' version '2.7.5'
     id 'io.spring.dependency-management' version '1.0.14.RELEASE'
     id 'java'
 }
 
 group = 'net.chimaek'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '11'
 
 configurations {
     compileOnly {
@@ -23,17 +23,16 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    implementation 'org.springframework.kafka:spring-kafka'
-    implementation 'com.h2database:h2:2.1.214'
-    implementation 'org.postgresql:postgresql:42.5.0'
+//    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+//    implementation 'org.springframework.kafka:spring-kafka'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.0.6'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.springframework.kafka:spring-kafka-test'
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+//    testImplementation 'org.springframework.kafka:spring-kafka-test'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
 }
 
 tasks.named('test') {
